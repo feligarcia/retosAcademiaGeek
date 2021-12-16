@@ -1,0 +1,25 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: goldenrod;
+}
+    #main { 
+        background-color: rgb(0, 0, 0); 
+        text-align: center;
+        color: white;
+    }
+    #title{
+        color:gold;
+        font-size: 35px;
+    }
+#img-caption{
+  font-style: italic;
+  color: rgb(255, 233, 108);
+}
+#tribute-info{
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+img{
+    width: 50%;
+}
