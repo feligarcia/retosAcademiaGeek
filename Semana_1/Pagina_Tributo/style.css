@@ -22,4 +22,8 @@ background-color: goldenrod;
 }
 img{
     width: 50%;
+    max-width:max-content;
+    display: block;
+    position: relative;
+    margin: 0 auto;
 }
