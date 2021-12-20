@@ -1,0 +1,76 @@
+
+form{
+    background-color: rgba(27, 255, 149, 0.267);
+    width: 80%;
+    border-radius: 20px;
+    padding: 3%;
+    margin: 0 auto;
+    margin
+   
+}
+form label {
+    margin-top: 10px;
+    display: block;
+    
+  }
+  input{
+      height: 20px;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+      
+  }
+  input:valid {
+    background-color: powderblue;
+  }
+  body {
+    text-align:left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    background-image: url(https://i2.wp.com/ellashablan.com/wp-content/uploads/2016/11/regalos-navidad-ninos.jpg);
+  }  
+  #title{
+      color: aliceblue;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      
+  }
+  #description{
+    font-style: oblique;
+    margin: 10px auto;
+    text-align: center;
+    
+  }
+  .divbarrios{
+    display: flex;
+    text-align: left;
+    justify-content:space-around;
+    
+  }
+  
+  #submit{
+      display: block;
+      width: 20%;
+      border-style: none;
+      background-color: darkorange;
+      height: 25px;
+  }
+  .dias{
+    display: flex;
+    text-align: left;
+    justify-content:space-around;
+   
+     
+  }
+  #dropdown{
+      width: 80%;
+      background-color: lavender;
+      height: 25px;
+  }
+  .carta{
+      width: 80%;
+      height: 60px;
+  }

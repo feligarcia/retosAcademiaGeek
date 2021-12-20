@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Voluntariado Regalo Navidad</h1>
+    <p id="description">Da una navidad especial a un niño.</p>
+    
+    <form action="" id="survey-form">
+      <label for="" id="name-label">Tu nombre: </label><input type="text" id="name" placeholder="Ingresa tu nombre" required>
+      <label for="" id="email-label">Email: </label><input type="email" id="email" placeholder="Ingresa un correo tipo correo@ejemplo.com" required>
+      <label for="" id="number-label">Celular: </label><input type="number" id="number" max="9999999999" min="999999" placeholder="Ingrese tu numero celular" required>
+    
+      
+        <label for="transporte">Tipo de transporte que usaras para ir al evento</label><select name="transporte" id="dropdown" required>
+            <option>Bus</option>
+            <option>Carro</option>
+            <option>Moto</option>
+        </select>
+      
+     
+            <label for="">Nuestro evento se desarrollara en tres barrios, elige cual quieres apoyar</label>
+            <br>
+            <div class="divbarrios">
+            <label for="contactChoice1"><input type="radio" id=""
+            name="contact" value="email" class="barrios">
+            San Antonio de Prado</label>
+        
+            <label for="contactChoice2" class="barrios"><input type="radio" id=""
+            name="contact" value="phone">
+            Niquitao</label>
+        
+            <label for="contactChoice3" class="barrios"><input type="radio" id=""
+            name="contact" value="mail">
+            Popular 1</label>
+      </div>
+      <br>
+      <label>Si quieres seguir participando en mas de nuestros eventos, indicanos que dia te gustaria servir</label><br>
+    <div class="dias"> 
+        
+        <label><input type="checkbox" id="cbox1" name="jueves" value="jueves">Jueves</label><br>
+        <label><input type="checkbox" id="cbox2" name="viernes" value="viernes">Viernes</label><br>
+        <label><input type="checkbox" id="cbox3" name="sabado" value="sabado">Sabado</label><br>
+        <label><input type="checkbox" id="cbox4" name="domingo" value="domingo">Domingo</label><br>
+    </div>
+      <br>
+    
+   <label for="carta">Escribe aqui tu carta que quieras dar a un niño para ese dia, recuerda que sera aleatorio: </label>
+      <textarea name="carta" id="" class="carta"></textarea>
+     <button id="submit" type="submit">Enviar</button>
+    </form>
+    
+
+
+</body>
+</html>
