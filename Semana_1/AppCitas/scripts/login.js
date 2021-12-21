@@ -10,18 +10,26 @@ ingreso.addEventListener('click', e=> {
     let password = document.getElementById('password').value
     let filtroUser = usuarios.filter(e => e.email.toLowerCase() === user.toLowerCase())
     let filtroPass= usuarios.filter(i => i.password === password)
+
     if((filtroUser.length == 0) || (filtroPass.length == 0)){
         let Mensaje = document.getElementById('Mensaje')
-        Mensaje.innerText = 'Usuario o contrasena incorrectas1'
-        if ((filtroUser.email === user) && (filtroPass.password === password)){
-            Mensaje.innerText = 'Usuario o contrasena incorrectas'
-            }
+        Mensaje.innerText = 'Usuario o contrasena incorrectas'
+        
     }else{
-        function abro(url){
-            let abrir = window.open(url, "_blank")
-          
-         } 
-          abro('citas.html')
+        console.log('Verificacion de ingreso')
+        console.log()
+        console.log(user)
+        console.log(filtroPass)
+        console.log(password)
+        filtroUser.forEach(usua => {
+            if(usua.email === user && usua.password === password){
+                function abro(url){
+                    let abrir = window.open(url, "_blank")
+                } 
+                abro('citas.html')
+            }else{
+                Mensaje.innerText = 'Usuario o contrasena incorrectas'}
+        })           
         
         }
 })
@@ -41,13 +49,10 @@ crearCuenta.addEventListener('click', e=> {
     Mensaje.innerText = ''
 })
 
-
-    
     ingreso.addEventListener('click', e =>{
         
     if (ingreso.value == 'btnCrear'){
-    e.preventDefault()
-    
+        e.preventDefault()
         let email = document.getElementById('email').value
         let password = document.getElementById('password').value
         let usuario = { 
@@ -58,6 +63,9 @@ crearCuenta.addEventListener('click', e=> {
         localStorage.setItem('usuario',JSON.stringify(usuarios))
         ingreso.value = 'btnIngreso'
         ingreso.innerText = "Ingresar"
+        let Mensaje = document.getElementById('Mensaje')
+        Mensaje.innerText = 'Usuario creado satisfactoriamente'
+        Mensaje.setAttribute('class',"green")
 }})
 
     

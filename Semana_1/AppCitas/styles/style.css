@@ -28,3 +28,6 @@ h1 {
 #Mensaje{
     background-color: rgb(192, 70, 0);
 }
+#Mensaje.green{
+    background-color: forestgreen;
+}

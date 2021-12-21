@@ -53,40 +53,57 @@ buscar.addEventListener('click', e=> {
     let filtro = data.filter(cita => cita.nombre.toLowerCase() === input.toLowerCase())
     busqueda.innerHTML = ''
     
+    let cont = 1
     filtro.length === 0
         ?
         busqueda.innerHTML += `<div class="alertaBusqueda">La persona ${input} no tiene citas o no existe</div>`
         :
         filtro.map(cita => {
+            
+            let btnCont = 'btnCont' + cont
             const {nombre,fecha,hora,sintomas} = cita
         busqueda.innerHTML += `
         <div class="divBusqueda">${nombre}</div>
         <div class="divBusqueda">${fecha}</div>
         <div class="divBusqueda">${hora}</div>
         <div class="divBusqueda">${sintomas}</div>
-            <button id="btnBorrar">Borrar</button></div>
+            <button id="${btnCont}">Borrar</button></div>
             <br>
         `
-        let borrar = document.getElementById('btnBorrar')
-        console.log(data)
+        cont = cont + 1 
+        //borrar datos con el boton borrar
+        let borrar = document.getElementById(`${btnCont}`)
+        console.log(filtro)
         console.log('aquivamos')
+        console.log(`${nombre}`)
+        
+        let t = 0
         borrar.addEventListener('click', e=> {
             
-            function eliminarPorName(name){
-                data.nombre.forEach(function(currentValue, index, arr){
-                if(data.nombre[index]==`${nombre}`){
-                    data.nombre.splice(index, index);     
-                 }
-                })
-              }
-              eliminarPorName(`${nombre}`)
-    
+            data.forEach(function(data, index, object) {
+                if(data.nombre === `${nombre}` && t==0){
+                  object.splice(index, 1);
+                  t=t+1
+                }
+                
+            });
+            console.log('afuera')
+       // console.log(object)
+            console.log(data)
+            localStorage.setItem('citas',JSON.stringify(data))
+            getLocalStorage()
+            t=0
         })
         
     })
 })
-
-
+//limpiar datos de la agenda
+let btnLimpiar = document.getElementById('btnLimpiar')
+btnLimpiar.addEventListener('click', e => {
+    localStorage.removeItem('citas',JSON.stringify(citas))
+    listarCita.innerHTML = ''
+    e.preventDefault()
+})
 
 
 document.addEventListener('DOMContentLoaded',getLocalStorage)
