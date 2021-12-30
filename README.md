@@ -10,7 +10,7 @@ Aqui se compila la solucion de cada uno de los retos semana a semana para supera
 - App de Citas [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_1/AppCitas) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_1/AppCitas/)
 ## Semana 2
 - Producto comercial [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_2/Producto_Comercial) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_2/Producto_Comercial/)
-- Documentacion tecnica
+- Documentacion tecnica [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_2/Documentacion_Tecnica) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_2/Documentacion_Tecnica/)
 ## Semana 3
 
 ## Semana 4
