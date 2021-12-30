@@ -9,7 +9,7 @@ Aqui se compila la solucion de cada uno de los retos semana a semana para supera
 - Uso de API Ricky y Morty [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_1/API%20Ricky) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_1/API%20Ricky/)
 - App de Citas [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_1/AppCitas) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_1/AppCitas/)
 ## Semana 2
-- Producto comercial
+- Producto comercial [Repositorio](https://github.com/feligarcia/retosAcademiaGeek/tree/main/Semana_2/Producto_Comercial) | [Despliegue](https://feligarcia.github.io/retosAcademiaGeek/Semana_2/Producto_Comercial/)
 - Documentacion tecnica
 ## Semana 3
 
