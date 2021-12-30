@@ -1,0 +1,48 @@
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+@media all and (min-width: 720px) {
+    #navbar {
+        position: sticky;
+        background-color: greenyellow;
+        top:0;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        margin: 0;
+        border-style:dotted;
+        
+    
+}}
+section header{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+}
+main{
+    width: auto;
+    padding: 2%;
+
+}
+body{
+    display: flex;
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-size:200%;
+    color: black;
+    border-style: solid;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+}
+nav header{
+    font-size: 20px;
+    font-size:200%;
+    font-weight: 600;
+    background-color: darkgreen;
+    color: white;
+}
